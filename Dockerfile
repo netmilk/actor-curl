@@ -5,7 +5,6 @@ RUN git clone https://github.com/netmilk/apify-cli.git
 WORKDIR apify-cli
 RUN npm install corepack
 RUN corepack enable
-RUN npm install
 RUN yarn install
 ENV PATH="${PATH}:/apify-cli/node_modules/.bin"
 WORKDIR /
